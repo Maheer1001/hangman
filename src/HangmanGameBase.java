@@ -38,7 +38,6 @@ public abstract class HangmanGameBase {
                 System.out.println("Incorrect!");
                 attempts--;
             }
-            guessedLetters.add(guess);
         }
         ui.showResult(getMaskedWord().equals(wordToGuess), wordToGuess);
     }

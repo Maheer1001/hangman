@@ -9,7 +9,7 @@ A console Hangman game with Easy, Medium and Hard difficulties. Words are loaded
 The game is split into small, swappable parts:
 
 - `HangmanGameBase` is an abstract class holding the shared game loop: guessing, tracking attempts and checking for a win or loss.
-- `EasyGame`, `MediumGame` and `HardGame` are subclasses that set the rules for each difficulty.
+- `EasyGame`, `MediumGame` and `HardGame` are subclasses that pick the word list and the number of wrong guesses allowed (10, 8 and 6).
 - `WordProvider` is the interface for word sources, and `FileWordProvider` reads words by difficulty from `words.txt`.
 - `UI` is the interface for input and output, and `ConsoleUI` is the terminal version. It asks for a difficulty and letters, shows the game state and results, and offers a replay.
 
